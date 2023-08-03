@@ -1,0 +1,12 @@
+server:
+  port: ${PORT:8080}
+springdoc:
+  swagger-ui:
+    path: /
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          github:
+            url: https://api.github.com

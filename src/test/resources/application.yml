@@ -1,0 +1,12 @@
+springdoc:
+  swagger-ui:
+    path: /
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          github:
+            url: http://localhost:${wiremock.server.port}
+  profiles:
+    active: test
